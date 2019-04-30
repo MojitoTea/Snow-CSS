@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Test</title>
+<style>
+*{margin:0px; padding:0px}
+.container{width:100%; height:100%; position:absolute; background:linear-gradient(#1A76BE,#0063B1);}
+
+.container{
+	background:#0063B1;
+	background-image: url('snow1.png'), url('snow2.png'), url('snow3.png');	
+	animation: snow 20s linear infinite;
+}
+
+@keyframes snow {
+ 0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+ 100% {background-position: 500px 1000px, 400px 400px, 300px 300px;}
+}
+
+h1 {  font-family: Helvetica, Arial, sans-serif;  text-align: center; font-size:50px; margin-top:240px; color:#fff;
+	  text-shadow: 2px 2px 0px rgba(255,255,255,.7), 5px 7px 0px rgba(0, 0, 0, 0.1); 
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+	<h1>Снег</h1>
+</div>
+</body>
+</html>
